@@ -1,0 +1,81 @@
+<!Doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Admin Login</title>
+    <style type="text/css">
+    input[type=submit] {
+      background-color: #FF8C00;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+      font-size: 20px;
+    }
+    input[type=submit]:hover {
+      background-color: #3fe0d0 ;
+    }
+
+    body {
+      background-image: url("/static/home_bg.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .pic{
+      position: absolute;
+      width: 700px;
+      height: 650px;
+      left: 120px;
+      top:50px;
+    }
+    .logo{
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    left: 5px;
+    top: 3px;
+    }
+    .text{
+      font-size: 25px;
+      font-family: 'Cabin', sans-serif;
+      color: #3fe0d0;
+    }
+    fieldset{
+      position:absolute;
+      width: 300px;
+      height: 250px;
+      left: 60%;
+      top: 150px;
+      border: 3px solid #3fe0d0 ;
+      border-radius: 15px;
+      margin: 0 auto ;
+      font-size: 25px;
+      font-family: 'Cabin', sans-serif;
+      background-color: white;
+      align-content: center;
+      }
+
+
+    </style>
+</head>
+<body>
+<div><img src="/static/login_pic.svg" class="pic" alt="login"></div>
+<div><a href="/"> <img src="/static/logo.png" class="logo" alt="logo"> </a></div>
+
+<form action="/admin" method="post">
+    <fieldset>
+        <a class="text"><b>Admin Login</b></a><br><br>
+        <label for="username" style="align-content: center;">Username</label> <br>
+        <input type="text" id="username" name="username"><br>
+
+        <label for="password">Password</label><br>
+        <input type="Password" id="password" name="password"><br><br>
+
+        <input type="submit" value="Login"><br><br><br>
+    </fieldset>
+</form>
+</body>
+</html>
